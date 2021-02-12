@@ -3,6 +3,7 @@
   "version": "0.1.5",
   "description": "React Native IDnow binding for iOS/Android platforms.",
   "main": "index.js",
+  "typings": "index.d.ts",
   "scripts": {
     "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,md,graphql}'"
   },
