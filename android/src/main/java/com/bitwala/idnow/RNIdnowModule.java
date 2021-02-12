@@ -3,7 +3,6 @@ package com.bitwala.idnow;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.widget.Toast;
 
 import com.facebook.react.bridge.ActivityEventListener;
 import com.facebook.react.bridge.BaseActivityEventListener;
@@ -12,8 +11,6 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReadableMap;
-
-//import java.util.HashMap;
 
 import de.idnow.sdk.IDnowSDK;
 
@@ -83,7 +80,6 @@ public class RNIdnowModule extends ReactContextBaseJavaModule {
 
         try {
             String language = options.getString("userInterfaceLanguage");
-
             IDnowSDK.getInstance().initialize(currentActivity, options.getString("companyId"), language);
             IDnowSDK.setShowVideoOverviewCheck(options.getBoolean("showVideoOverviewCheck"), reactContext);
             IDnowSDK.setShowErrorSuccessScreen(options.getBoolean("showErrorSuccessScreen"), reactContext);
