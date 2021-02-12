@@ -8,6 +8,7 @@ export const defaultOptions = {
   ignoreCompanyID: true,
   showIdentTokenOnCheckScreen: false,
   forceModalPresentation: false,
+  userInterfaceLanguage: 'en',
   // environment: 'LIVE', no need to force to use a specific env; Default is to determine this by the token used
   // apiHost: null,
   // webHost: null,

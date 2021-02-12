@@ -33,6 +33,7 @@ export type IDnowVideoIdentAppearance = {
 
 export type IDnowVideoIdentOptions = {
 	companyId?: string;
+	userInterfaceLanguage?: string;
 	showVideoOverviewCheck?: boolean;
 	showErrorSuccessScreen?: boolean;
 	transactionToken?: string;

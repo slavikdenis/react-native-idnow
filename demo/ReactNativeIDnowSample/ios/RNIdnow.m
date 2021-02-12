@@ -55,6 +55,7 @@
   self.settings.showVideoOverviewCheck = options[@"showVideoOverviewCheck"];
   self.settings.ignoreCompanyID = options[@"ignoreCompanyID"];
   self.settings.forceModalPresentation = options[@"forceModalPresentation"];
+  self.settings.userInterfaceLanguage = options[@"userInterfaceLanguage"];
   self.settings.showIdentTokenOnCheckScreen = options[@"showIdentTokenOnCheckScreen"];
   
   self.idnowController = [[IDnowController alloc] initWithSettings: self.settings];

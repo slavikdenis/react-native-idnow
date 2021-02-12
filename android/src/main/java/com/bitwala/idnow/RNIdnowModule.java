@@ -82,7 +82,9 @@ public class RNIdnowModule extends ReactContextBaseJavaModule {
         idnowPromise = promise;
 
         try {
-            IDnowSDK.getInstance().initialize(currentActivity, options.getString("companyId"));
+            String language = options.getString("userInterfaceLanguage");
+
+            IDnowSDK.getInstance().initialize(currentActivity, options.getString("companyId"), language);
             IDnowSDK.setShowVideoOverviewCheck(options.getBoolean("showVideoOverviewCheck"), reactContext);
             IDnowSDK.setShowErrorSuccessScreen(options.getBoolean("showErrorSuccessScreen"), reactContext);
 
