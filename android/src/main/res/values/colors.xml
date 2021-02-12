@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Used by theme as default color for display and editable texts -->
+    <color name="text_default">#4A4A4A</color>
+
+    <!-- Primary color is used for headlines and links -->
+    <color name="primary">#F95602</color>
+
+    <!-- background color for confirmation/continue button, which is usually placed at the bottom of a screen -->
+    <color name="proceed_button_background">@color/primary</color>
+
+    <!-- "Wiederholen" button when a photo was taken in photo ident -->
+    <color name="photo_ident_retake_button_background">@color/text_default</color>
+
+    <!-- Colors of the result screen -->
+    <color name="success">#A4AC49</color>
+    <color name="failure">#E0727A</color>
+</resources>
