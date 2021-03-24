@@ -61,7 +61,11 @@ public class RNIdnowModule extends ReactContextBaseJavaModule {
 
         try {
             String language = options.getString("userInterfaceLanguage");
-            IDnowSDK.getInstance().initialize(currentActivity, options.getString("companyId"), language);
+            IDnowSDK.getInstance().initialize(
+                currentActivity,
+                options.getString("companyId"),
+                language
+            );
             IDnowSDK.setShowVideoOverviewCheck(options.getBoolean("showVideoOverviewCheck"), reactContext);
             IDnowSDK.setShowErrorSuccessScreen(options.getBoolean("showErrorSuccessScreen"), reactContext);
 
@@ -69,6 +73,7 @@ public class RNIdnowModule extends ReactContextBaseJavaModule {
 
             IDnowSDK.getInstance().start(IDnowSDK.getTransactionToken(reactContext));
         } catch (Exception e) {
+            e.printStackTrace();
             promise.reject("ERR_UNEXPECTED_EXCEPTION", e);
         }
     }

@@ -181,6 +181,7 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation "de.idnow.sdk:idnow-android-sdk:5.0.2"
 
     if (enableHermes) {
         def hermesPath = "../../node_modules/hermes-engine/android/";
