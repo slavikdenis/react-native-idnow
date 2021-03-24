@@ -60,12 +60,6 @@ react-native link react-native-idnow
    ```
      compile project(':react-native-idnow')
    ```
-4. Add the following to `repositories` in `android/build.gradle`:
-   ```
-    maven {
-      url "https://raw.githubusercontent.com/idnow/de.idnow.android/de.idnow.android-4.2.0"
-    }
-   ```
    </details>
 
 ## Additional _required_ steps:
@@ -76,23 +70,15 @@ react-native link react-native-idnow
   add `xmlns:tools="http://schemas.android.com/tools"` to the `manifest` tag
   add `tools:replace="android:icon,android:theme,android:allowBackup"` to the `application` tag
 
-- See [IDnow AndroidManifest](https://github.com/idnow/de.idnow.android#androidmanifest) section
+* See [IDnow - How to import the SDK](https://github.com/idnow/de.idnow.android#how-to-import-the-sdk)
 
-- (not required) To change colors, update `colors.xml` (see `/demo/ReactNativeIDnowSample/android/app/src/main/res/values/colors.xml`)
+- See [IDnow - AndroidManifest](https://github.com/idnow/de.idnow.android#androidmanifest) section
+
+* (not required) To change colors, update `colors.xml` (see `/demo/ReactNativeIDnowSample/android/app/src/main/res/values/colors.xml`)
 
 ### iOS
 
-- Add the following pod dependencies to your podfile:
-
-```
-pod 'IDnowSDK', '4.1.7'
-```
-
-- Then, run the following command:
-
-```
-pod install
-```
+- See [IDnow - CocoaPods](https://github.com/idnow/de.idnow.ios#cocoapods)
 
 - Add following to Info.plist:
 
