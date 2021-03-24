@@ -15,13 +15,14 @@
     "react-native-idnow": "file:../../"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/runtime": "^7.7.2",
     "@types/jest": "24.0.22",
     "@types/react": "16.9.11",
     "@types/react-native": "0.60.22",
     "@types/react-test-renderer": "16.9.1",
-    "@babel/core": "^7.7.2",
-    "@babel/runtime": "^7.7.2",
     "babel-jest": "^24.9.0",
+    "eslint": "^7.22.0",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.57.0",
     "react-test-renderer": "16.9.0",
