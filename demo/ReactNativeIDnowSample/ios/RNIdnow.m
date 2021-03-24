@@ -10,10 +10,6 @@
 @property (strong, nonatomic) IDnowSettings   *settings;
 @end
 
-
-//-------------------------------------------------------//
-//-------------------------------------------------------//
-//-------------------------------------------------------//
 @implementation IDnowViewController
 
 -(id)initWithOptions:(NSDictionary *)options
@@ -139,9 +135,6 @@
 @end
 
 
-//-------------------------------------------------------//
-//-------------------------------------------------------//
-//-------------------------------------------------------//
 @implementation IDnowViewManager {
   IDnowViewController* idnowViewController;
 }

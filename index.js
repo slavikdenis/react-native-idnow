@@ -9,13 +9,6 @@ export const defaultOptions = {
   showIdentTokenOnCheckScreen: false,
   forceModalPresentation: false,
   userInterfaceLanguage: 'en',
-  // environment: 'LIVE', no need to force to use a specific env; Default is to determine this by the token used
-  // apiHost: null,
-  // webHost: null,
-  // websocketHost: null,
-  // videoHost: null,
-  // stunHost: null,
-  // stunPort: null,
 
   appearance: {
     // Adjust colors
@@ -40,11 +33,11 @@ export const defaultOptions = {
 };
 
 const prepareOptions = options => {
-  // TODO refactor
   const appearanceOptions = {
     ...defaultOptions.appearance,
     ...options.appearance,
   };
+
   return {
     ...defaultOptions,
     ...options,
